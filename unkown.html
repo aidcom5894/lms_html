@@ -274,10 +274,10 @@
         <!-- breadcrumb -->
         <div class="site-breadcrumb" style="background: url(assets/img/breadcrumb/01.jpg)">
             <div class="container">
-                <h2 class="breadcrumb-title">Sign Up</h2>
+                <h2 class="breadcrumb-title">Signup Portal</h2>
                 <ul class="breadcrumb-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active">Login</li>
+                    <li class="active">Signup Portal</li>
                 </ul>
             </div>
         </div>
@@ -291,20 +291,16 @@
                     <div class="login-form">
                         <div class="login-header">
                             <img src="assets/img/logo/logo.png" alt="">
-                            <p>Enter your details for eduka account</p>
+                            <p>Login with your eduka account</p>
                         </div>
-                        <form method="POST">
-                            <div class="form-group">
-                                <label>Username</label>
-                                <input type="text" class="form-control" id="uname" placeholder="Username">
-                            </div>
+                        <form action="#">
                             <div class="form-group">
                                 <label>Email Address</label>
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
+                                <input type="email" class="form-control" placeholder="Your Email">
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" id="pswrd" placeholder="Your Password">
+                                <input type="password" class="form-control" placeholder="Your Password">
                             </div>
                             <div class="d-flex justify-content-between mb-4">
                                 <div class="form-check">
@@ -316,21 +312,11 @@
                                 <a href="forgot-password.html" class="forgot-pass">Forgot Password?</a>
                             </div>
                             <div class="d-flex align-items-center">
-                                <button type="button" class="theme-btn" id="signup" onclick="register()"><i class="far fa-sign-in"></i> Sign up</button>
+                                <button type="submit" class="theme-btn"><i class="far fa-sign-in"></i> Login</button>
                             </div>
                         </form>
-<script type="text/javascript">
-    function register()
-    {
-        localStorage.setItem("activeuser",uname);
-        localStorage.setItem("activemail",mail);  
-        localStorage.setItem("activepassword",pswrd);
-
-        window.location.href="login.html";  
-    }
-</script>
                         <div class="login-footer">
-                            <p>have an account? <a href="login.html">login.</a></p>
+                            <p>Don't have an account? <a href="register.html">Register.</a></p>
                         </div>
                     </div>
                 </div>
